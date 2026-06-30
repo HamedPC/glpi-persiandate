@@ -1,0 +1,21 @@
+/*
+ * Persian Date for GLPI - visual tweaks
+ * -------------------------------------------------------------------------
+ * Keeps the Jalali datepicker popup above GLPI's modals and gives it a
+ * clean Persian-friendly font.
+ */
+
+.datepicker-plot-area {
+    z-index: 10050 !important;
+    font-family: Tahoma, "Segoe UI", Arial, sans-serif !important;
+}
+
+.datepicker-plot-area .navigator .pwt-btn-next,
+.datepicker-plot-area .navigator .pwt-btn-prev {
+    cursor: pointer;
+}
+
+/* The visible Jalali input reads left-to-right (1405/04/15 13:28:32). */
+input.form-control[dir="ltr"] {
+    direction: ltr;
+}
