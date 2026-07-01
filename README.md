@@ -16,7 +16,7 @@ A plugin for **GLPI** that displays every date using the **Persian (Jalali) cale
 
 ## ✅ Compatibility
 
-- **GLPI 10.0.x** (tested on 10.0.17 with PHP 8.3)
+- **GLPI 10.0.x** and **GLPI 11.0.x** (tested on 10.0.17 and 11.0.8, PHP 8.3)
 
 ## 📦 Installation
 
@@ -50,16 +50,17 @@ That's it — all date fields are now Jalali.
 
 ```
 persiandate/
-├── setup.php                 plugin definition and hook registration
-├── js/
-│   ├── jquery-bridge.js      ensures a global window.jQuery for the libraries
-│   └── persiandate.js        core logic (picker replacement + text conversion)
-├── css/
-│   └── persiandate.css       visual tweaks
-└── lib/                      third-party libraries (MIT license)
-    ├── persian-date.min.js
-    ├── persian-datepicker.min.js
-    └── persian-datepicker.min.css
+├── setup.php                     plugin definition and hook registration
+└── public/                       web-served assets (required by GLPI 11)
+    ├── js/
+    │   ├── jquery-bridge.js      ensures a global window.jQuery for the libraries
+    │   └── persiandate.js        core logic (picker replacement + text conversion)
+    ├── css/
+    │   └── persiandate.css       visual tweaks
+    └── lib/                      third-party libraries (MIT license)
+        ├── persian-date.min.js
+        ├── persian-datepicker.min.js
+        └── persian-datepicker.min.css
 ```
 
 ## ⚙️ How it works
