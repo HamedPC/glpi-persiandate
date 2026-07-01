@@ -16,35 +16,42 @@ A plugin for **GLPI** that displays every date using the **Persian (Jalali) cale
 
 ## ✅ Compatibility
 
-- **GLPI 10.0.x** and **GLPI 11.0.x** (tested on 10.0.17 and 11.0.8, PHP 8.3)
+- **GLPI 10.0.x** and **GLPI 11.0.x** (tested on 10.0.23 and 11.0.8, PHP 8.3)
 
 ## 📦 Installation
 
-1. Clone the repository into GLPI's plugins directory, naming the folder `persiandate`:
+1. Open the **`plugins` folder** of your GLPI installation.
 
-   ```bash
-   cd glpi/plugins
-   git clone https://github.com/hamedpc/glpi-persiandate.git persiandate
-   ```
+   The exact location depends on how GLPI was set up. Common paths are
+   `/var/www/glpi/plugins`, `/var/www/html/glpi/plugins`, or a `plugins`
+   folder inside your GLPI web root. If you're not sure where GLPI lives,
+   check your web server (Apache/Nginx) configuration or ask your system
+   administrator.
 
-   The final path must be:
+2. Put the plugin inside that folder so it ends up as a directory named
+   **exactly** `persiandate`:
 
-   ```
-   glpi/plugins/persiandate/
-   ```
+   - Using Git (run this **inside the `plugins` folder**):
 
-   > If you downloaded the ZIP instead, extract it and make sure the folder is named exactly `persiandate`.
+     ```bash
+     git clone https://github.com/hamedpc/glpi-persiandate.git persiandate
+     ```
 
-2. In GLPI, go to **Setup → Plugins**.
+   - Or download the ZIP, extract it, and rename the extracted folder to
+     `persiandate`.
 
-3. Next to "Persian Date", click **Install**, then **Enable**.
+   The result must be a folder named `persiandate` directly inside your
+   GLPI `plugins` directory (for example `.../glpi/plugins/persiandate/`).
 
-4. Do one hard refresh so the new assets load:
+3. In GLPI, go to **Setup → Plugins**.
 
-   - Windows / Linux: `Ctrl + Shift + R`
-   - macOS: `Cmd + Shift + R`
+4. Next to "Persian Date", click **Install**, then **Enable**.
 
 That's it — all date fields are now Jalali.
+
+> **Updating:** after replacing the plugin with a newer version, do one hard
+> refresh so the browser loads the new assets — `Ctrl + Shift + R` on
+> Windows/Linux, `Cmd + Shift + R` on macOS.
 
 ## 🗂 Project structure
 
@@ -80,7 +87,7 @@ So the interface is Jalali, but everything stored or submitted stays Gregorian �
 ## 📄 License
 
 - This plugin's code is released under the **GPL v2+** license (consistent with GLPI itself).
-- The libraries bundled in `lib/` are licensed under the **MIT** license:
+- The libraries bundled in `public/lib/` are licensed under the **MIT** license:
   - [persian-date](https://github.com/babakhani/PersianDate)
   - [persian-datepicker](https://github.com/babakhani/pwt.datepicker)
 
