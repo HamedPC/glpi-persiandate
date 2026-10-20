@@ -20,7 +20,7 @@ define('PLUGIN_PERSIANDATE_VERSION', '1.0.1');
 
 // Supported GLPI version range (GLPI 10 and 11).
 define('PLUGIN_PERSIANDATE_MIN_GLPI', '10.0.0');
-define('PLUGIN_PERSIANDATE_MAX_GLPI', '11.0.99');
+define('PLUGIN_PERSIANDATE_MAX_GLPI', '12.0.99');
 
 /**
  * Plugin metadata shown on the GLPI "Plugins" page.
