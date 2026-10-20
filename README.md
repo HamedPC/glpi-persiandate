@@ -16,7 +16,7 @@ A plugin for **GLPI** that displays every date using the **Persian (Jalali) cale
 
 ## ✅ Compatibility
 
-- **GLPI 10.0.x** and **GLPI 11.0.x** (tested on 10.0.23 and 11.0.8, PHP 8.3)
+- **GLPI 10.0.x**, **GLPI 11.0.x**, and **GLPI 12.0.x** (tested on 10.0.23, 11.0.8, and 12.0.0, PHP 8.3)
 
 ## 📦 Installation
 
