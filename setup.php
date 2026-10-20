@@ -8,7 +8,7 @@
  * the database keeps storing the original Gregorian values untouched.
  * Disabling the plugin reverts all dates back to Gregorian instantly.
  *
- * Compatible with GLPI 10 and GLPI 11.
+ * Compatible with GLPI 10, GLPI 11 and GLPI 12.
  *
  * @author    Hamed Zakeri
  * @link      https://github.com/hamedpc/glpi-persiandate
@@ -16,9 +16,9 @@
  * -------------------------------------------------------------------------
  */
 
-define('PLUGIN_PERSIANDATE_VERSION', '1.0.1');
+define('PLUGIN_PERSIANDATE_VERSION', '1.0.2');
 
-// Supported GLPI version range (GLPI 10 and 11).
+// Supported GLPI version range (GLPI 10, 11 and 12).
 define('PLUGIN_PERSIANDATE_MIN_GLPI', '10.0.0');
 define('PLUGIN_PERSIANDATE_MAX_GLPI', '12.0.99');
 
